@@ -30,21 +30,21 @@ li {
 }
 
 h1 {
-	font-size: 200%;
+	font-size: 3.5vw;
 	font-weight: 200;
 	line-height: 2em;
 	color: white; 
 }
 
 h2 {
-	font-size: 120%;
+	font-size: 1.5vw;
 	font-weight: 800;
 	line-height: 1em;
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
 	color: white;
 	background-color: orange;
-	padding: 4%;
+	padding: 8%;
 }
 
 p {
@@ -68,8 +68,8 @@ p {
 }
 
 .my-photo {
-    width: 200px;
-    height: 200px;
+    height: 30vh;
+    width: 30vh;
 	border-radius: 100%;
     background-size: cover;
     background-position: top;
@@ -83,12 +83,11 @@ p {
 }
 
 .project-boxes li {
-    max-width: 30%;
+    width: 30%;
 }
 
 .project-box {
-    max-width: 100%;
-    margin: 2%;
+    width: 100%;
     box-shadow: 1em 1em 0.5em #888888;
 }
 
@@ -99,24 +98,54 @@ p {
 }
 
 /* Landscape Phone */
-@media all and (min-width: 400px) {
+@media all and (max-width: 400px) {
+    .navbar ul {
+        padding: 0;
+    }
+
+    .navbar li {
+        margin: auto;
+        width: 90%;
+    }
+
+    .my-photo {
+        margin: auto;
+    }
 }
 
 /* Tablet Portrait */
 @media all and (min-width: 700px) {
 }
 
-@media all and (min-width: 900px) {
+@media all and (max-width: 900px) {
+    li {
+        display: block;
+        padding: 0;
+        margin-left: 0;
+        margin: auto;
+    }
+
+    .navbar ul {
+        margin-top: 5%;
+    }
+
+    .project-boxes li {
+        width: 90%;
+        margin-bottom: 10%
+    }
+    h1 {
+        font-size: 5vw;
+    }
+    h2 {
+        font-size: 4vw;
+    }
+    p {
+        font-size: 3vw;
+    }
 }
 
-@media all and (min-width: 1200px) {
-}
-
-@media all and (min-width: 1400px) {
-}
-	
-@media all and (min-width: 1600px) {
-}
-
-@media all and (min-width: 1920px) {
+@media all and (max-width: 1100px) {
+    .contact {
+        display: none;
+    }
 }
