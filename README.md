@@ -1,2 +1,1 @@
-# zulixro.github.io
-ZZ Web Development
+# [Julia Rosciszewska. About me.](zulixro.github.io)
